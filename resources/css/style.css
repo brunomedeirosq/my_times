@@ -1,19 +1,28 @@
+/* Header Style */
+
+/* Remove later - help layout */
+div,
+main {
+  border: 1px solid black;
+}
+/* Remove until here */
+
 header {
   display: flex;
-  font-family: Verdana;
-  font-size: 14px;
-  font-weight: bold;
   border-bottom: 1px solid black;
   height: 80px;
   align-items: center;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .logo {
   display: flex;
+  width: 100%;
   align-items: center;
   padding-left: 30px;
   color: MediumAquamarine;
-  width: 100%;
 }
 
 .logo img {
@@ -32,4 +41,34 @@ nav span {
 
 nav a {
   color: black;
+}
+
+/* Main Style */
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+/* Chaining Selectors */
+/* Double Class Selector */
+/* Target an element that has all of multiple classes. Shown below with two classes, but not limited to two. */
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
 }
