@@ -1,6 +1,12 @@
+/* Format Body */
+
+body {
+  margin: 0;
+}
+
 /* Header Style */
 
-/* Remove later - help layout */
+/* Remove later - help placing containers - layout */
 div,
 main {
   border: 1px solid black;
@@ -15,6 +21,10 @@ header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
 }
 
 .logo {
@@ -45,10 +55,45 @@ nav a {
 
 /* Main Style */
 
+/* Format Text */
+
+main p {
+  font-family: Gregory;
+  font-size: 17px;
+  color: black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Format text small column */
+
+.bites h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+.bites span {
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 11px 20px;
+  display: block;
+}
+
+/* Placing Containers - Layout */
+
 main {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  margin-bottom: 78px;
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-top: 0px;
+  padding-top: 116px;
 }
 
 .column {
@@ -71,4 +116,58 @@ main {
 
 .column.small {
   width: 240px;
+}
+
+.stories {
+  display: flex;
+  margin-top: 17px;
+  justify-content: space-between;
+}
+
+.text-content {
+  height: 250px;
+}
+
+.left,
+.right {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+
+/* Images */
+
+/* Formatting Containers and Text Images */
+.image {
+  display: flex;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Placing images */
+
+/* Chaining Selectors and Nested Selectors */
+
+.column.large .top .image {
+  background-image: url("../images/img-story-main.png");
+  font-size: 40px;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.column.large .left .image {
+  background-image: url("../images/img-story-2.png");
+}
+
+.column.large .right .image {
+  background-image: url("../images/img-story-3.png");
+}
+
+.column.medium .bottom .image {
+  background-image: url("../images/img-story-1.png");
 }
