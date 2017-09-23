@@ -9,7 +9,7 @@ body {
 /* Remove later - help placing containers - layout */
 div,
 main {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 /* Remove until here */
 
@@ -44,7 +44,7 @@ header nav {
   padding-right: 40px;
 }
 
-nav span {
+header nav span {
   display: inline-block;
   padding: 20px 10px;
 }
@@ -170,4 +170,32 @@ main {
 
 .column.medium .bottom .image {
   background-image: url("../images/img-story-1.png");
+}
+
+/* Footer Style */
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  width: 100%;
+  height: 325px;
+}
+
+.mytimes-footer {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+}
+
+footer nav span {
+  display: inline-block;
+  padding: 0px 20px;
 }
